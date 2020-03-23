@@ -35,7 +35,7 @@ yarn global add wetty
 ## Usage
 
 ```sh
-wetty [-h] [--port PORT] [--base BASE] [--sshhost SSH_HOST] [--sshport SSH_PORT] [--sshuser SSH_USER] [--host HOST] [--command COMMAND] [--forcessh] [--bypasshelmet] [--title TITLE] [--sslkey SSL_KEY_PATH] [--sslcert SSL_CERT_PATH]
+wetty [-h] [--port PORT] [--base BASE] [--sshhost SSH_HOST] [--sshport SSH_PORT] [--sshuser SSH_USER] [--host HOST] [--command COMMAND] [--forcessh] [--title TITLE] [--sslkey SSL_KEY_PATH] [--sslcert SSL_CERT_PATH]
 ```
 
 Open your browser on `http://yourserver:3000/wetty` and you will prompted to

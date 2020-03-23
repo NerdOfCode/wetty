@@ -19,7 +19,6 @@ export function unWrapArgs(
       host: args.host,
       port: args.port,
       title: args.title,
-      bypasshelmet: args.bypasshelmet || false,
     },
     command: args.command,
     forcessh: args.forcessh,

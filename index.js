@@ -85,7 +85,7 @@ if (require.main === module) {
           alias: 'p',
           description: 'wetty listen port',
           type: 'number',
-          default: parseInt(process.env.PORT, 10) || 3000,
+          default: parseInt(process.env.PORT, 10) || 3001,
         },
         host: {
           demand: false,
@@ -99,12 +99,6 @@ if (require.main === module) {
           description: 'command to run in shell',
           type: 'string',
           default: process.env.COMMAND || 'login',
-        },
-        bypasshelmet: {
-          demand: false,
-          description: 'disable helmet from placing security restrictions',
-          type: 'boolean',
-          default: false,
         },
         help: {
           demand: false,

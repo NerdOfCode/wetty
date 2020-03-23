@@ -17,26 +17,25 @@ Starts WeTTy Server
 **Kind**: inner property of [`WeTTy`](#module_WeTTy)  
 **Returns**: `Promise` - Promise resolves once server is running
 
-| Param                     | Type      | Default       | Description                                                                                                            |
-| :------------------------ | --------- | ------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [ssh]                     | `Object`  |               | SSH settings                                                                                                           |
-| [ssh.user]                | `string`  | `"''"`        | default user for ssh                                                                                                   |
-| [ssh.host]                | `string`  | `"localhost"` | machine to ssh too                                                                                                     |
-| [ssh.auth]                | `string`  | `"password"`  | authtype to use                                                                                                        |
-| [ssh.port]                | `number`  | `22`          | port to connect to over ssh                                                                                            |
-| [ssh.pass]                | `string`  |               | Optional param of a password to use for ssh                                                                            |
-| [ssh.key]                 | `string`  |               | path to an optional client private key (connection will be password-less and insecure!)                                |
-| [serverConf]              | `Object`  |               | Server settings                                                                                                        |
-| [serverConf.base]         | `Object`  | `'/wetty/'`   | Server settings                                                                                                        |
-| [serverConf.port]         | `number`  | `3000`        | Port to run server on                                                                                                  |
-| [serverConf.host]         | `string`  | `'0.0.0.0'`   | Host address for server                                                                                                |
-| [serverConf.title]        | `string`  | `'WeTTy'`     | Title of the server                                                                                                    |
-| [serverConf.bypasshelmet] | `boolean` | `false`       | if helmet should be disabled on the sever                                                                              |
-| [command]                 | `string`  | `"''"`        | The command to execute. If running as root and no host specified this will be login if a host is specified will be ssh |
-| [forcessh]                | `boolean` | `false`       | Connecting through ssh even if running as root                                                                         |
-| [ssl]                     | `Object`  |               | SSL settings                                                                                                           |
-| [ssl.key]                 | `string`  |               | Path to ssl key                                                                                                        |
-| [ssl.cert]                | `string`  |               | Path to ssl cert                                                                                                       |
+| Param              | Type      | Default       | Description                                                                                                            |
+| :----------------- | --------- | ------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [ssh]              | `Object`  |               | SSH settings                                                                                                           |
+| [ssh.user]         | `string`  | `"''"`        | default user for ssh                                                                                                   |
+| [ssh.host]         | `string`  | `"localhost"` | machine to ssh too                                                                                                     |
+| [ssh.auth]         | `string`  | `"password"`  | authtype to use                                                                                                        |
+| [ssh.port]         | `number`  | `22`          | port to connect to over ssh                                                                                            |
+| [ssh.pass]         | `string`  |               | Optional param of a password to use for ssh                                                                            |
+| [ssh.key]          | `string`  |               | path to an optional client private key (connection will be password-less and insecure!)                                |
+| [serverConf]       | `Object`  |               | Server settings                                                                                                        |
+| [serverConf.base]  | `Object`  | `'/wetty/'`   | Server settings                                                                                                        |
+| [serverConf.port]  | `number`  | `3000`        | Port to run server on                                                                                                  |
+| [serverConf.host]  | `string`  | `'0.0.0.0'`   | Host address for server                                                                                                |
+| [serverConf.title] | `string`  | `'WeTTy'`     | Title of the server                                                                                                    |
+| [command]          | `string`  | `"''"`        | The command to execute. If running as root and no host specified this will be login if a host is specified will be ssh |
+| [forcessh]         | `boolean` | `false`       | Connecting through ssh even if running as root                                                                         |
+| [ssl]              | `Object`  |               | SSL settings                                                                                                           |
+| [ssl.key]          | `string`  |               | Path to ssl key                                                                                                        |
+| [ssl.cert]         | `string`  |               | Path to ssl cert                                                                                                       |
 
 ### "connection"
 

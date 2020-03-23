@@ -2,7 +2,6 @@ import { isUndefined } from 'lodash';
 import * as compression from 'compression';
 import * as express from 'express';
 import * as favicon from 'serve-favicon';
-import * as helmet from 'helmet';
 import * as http from 'http';
 import * as https from 'https';
 import * as path from 'path';
@@ -17,7 +16,7 @@ const distDir = path.join(__dirname, 'client');
 const trim = (str: string): string => str.replace(/\/*$/, '');
 
 export default function createServer(
-  { base, port, host, title, bypasshelmet }: Server,
+  { base, port, host, title }: Server,
   { key, cert }: SSLBuffer
 ): SocketIO.Server {
   const basePath = trim(base);
@@ -44,13 +43,6 @@ export default function createServer(
         );
       else next();
     });
-
-  // Allow helmet to be bypassed.
-  // Unfortunately, order matters with middleware
-  // which is why this is thrown in the middle
-  if (!bypasshelmet) {
-    app.use(helmet());
-  }
 
   const client = html(base, title);
   app.get(basePath, client).get(`${basePath}/ssh/:user`, client);

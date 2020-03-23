@@ -13,7 +13,6 @@ export interface Options {
   title: string;
   command?: string;
   forcessh?: boolean;
-  bypasshelmet?: boolean;
 }
 
 export interface CLI extends Options {

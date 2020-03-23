@@ -19,7 +19,6 @@ export default function startWeTTy(
     port: 3000,
     host: '0.0.0.0',
     title: 'WeTTy',
-    bypasshelmet: false,
   },
   command = '',
   forcessh = false,
