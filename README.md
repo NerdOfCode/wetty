@@ -29,17 +29,17 @@ websockets rather then Ajax and hence better response time.
 ## Install
 
 ```sh
-yarn global add wetty
+git clone git@github.com:NerdOfCode/wetty.git && cd wetty
+npm install && npm start
 ```
+
+**Note:** You will most likely have to run wetty as root, due to the networking
+port it accesses(3001/tcp)...
 
 ## Usage
 
-```sh
-wetty [-h] [--port PORT] [--base BASE] [--sshhost SSH_HOST] [--sshport SSH_PORT] [--sshuser SSH_USER] [--host HOST] [--command COMMAND] [--forcessh] [--title TITLE] [--sslkey SSL_KEY_PATH] [--sslcert SSL_CERT_PATH]
-```
-
-Open your browser on `http://yourserver:3000/wetty` and you will prompted to
-login. Or go to `http://yourserver:3000/wetty/ssh/<username>` to specify the
+Open your browser on `http://yourserver:3001/wetty` and you will prompted to
+login. Or go to `http://yourserver:3001/wetty/ssh/<username>` to specify the
 user before hand.
 
 If you run it as root it will launch `/bin/login` (where you can specify the
